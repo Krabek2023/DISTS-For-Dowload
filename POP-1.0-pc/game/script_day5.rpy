@@ -22,14 +22,16 @@ label day5:
         $ chanse = renpy.random.randint(1,10)
 
         if chanse == 6:
-                
-            call down from _call_down
+            call down from _call_down 
         else:
             jump godpnigstyle
 
     label down:
+        "Вы подскальзываете на льду"
 
-        "Егор, сюда надо написать момент с подскальзывание на 'говне'"
+        gg "АЙЙЙЙЙЙ, блин, это было больно"
+
+        "Вы встали отряхнулись, и побежали дальше на мероприятие"
 
     label godpnigstyle:
 
@@ -38,7 +40,7 @@ label day5:
 
         $ timez = 80
         $ time_range = 80
-        $ marker = 'pussyboi'
+        $ marker = 'sissy'
 
         scene phone51
         with Fade(0.3,0.3,0.6)
@@ -64,18 +66,18 @@ label day5:
 
         boss "Я че-то не понял, ты че, тупой?"
 
-        noname "Так, все, ты за**л, телефон отдавай!"
+        noname "Так, все, ты взбесил, телефон отдавай!"
 
         voice "И тут я понял, что нарвался на местных гопников"
 
         menu:
             gg "* Что же делать? *"
-            "съебаться":
+            "уйти":
                 jump run
-            "быть пуськой":
-                jump pussyboi
+            "быть неженкой":
+                jump sissy
             "перец в лицо":
-                jump illfuckyou
+                jump rejection
 
         label run:
 
@@ -84,8 +86,7 @@ label day5:
             scene streen1back
             with Fade(0.2,0.2,0.4)
 
-
-            noname "Эээ, куда?! А ну стой, с**а!"
+            noname "Эээ, куда?! А ну стой!"
 
             voice "Нужно было ходить на физ-ру, чтобы быстрее бегать в такие критические моменты."
 
@@ -113,9 +114,7 @@ label day5:
 
             jump day6
             
-
-
-        label pussydoi:
+        label sissy:
 
             gg "Да, конечно, берите, только не трогайте!"
 
@@ -150,7 +149,7 @@ label day5:
 
             jump day6
 
-        label illfuckyou:
+        label rejection:
 
             gg "Что? На каком это основании?"
 
